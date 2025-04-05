@@ -10,11 +10,23 @@
 // } & JSX.IntrinsicElements["group"]; // Include props for a Three.js group element
 
 
-export default interface ModelProps {
-  angles: number[]; // Array of angles for each frame
-  rotations: Array<[number, number, number]>; // Array of rotation tuples
-  positions: Array<[number, number, number]>; // Array of position tuples
-  scale?: number;
-  mirror?: boolean;
-  planeYPositions: number[]; // Array of plane Y positions for each frame
+// export default interface ModelProps {
+//   angles: number[]; // Array of angles for each frame
+//   rotations: Array<[number, number, number]>; // Array of rotation tuples
+//   positions: Array<[number, number, number]>; // Array of position tuples
+//   scale?: number;
+//   mirror?: boolean;
+//   planeYPositions: number[]; // Array of plane Y positions for each frame
+// }
+
+
+// ModelProps.ts
+interface ModelProps {
+  angles: number[];
+  rotations: [number, number, number][];
+  positions: [number, number, number][];
+  planeYPositions: number[];
+  showHelpers?: boolean;
 }
+
+export default ModelProps;

@@ -1,7 +1,7 @@
 import { Outlet, useNavigation, ScrollRestoration } from 'react-router-dom';
 
 import LoadingIndicator from '../components/common/LoadingIndicator';
-import Footer from '../components/layouts/Footer';
+// import Footer from '../components/layouts/Footer';
 import Header from '../components/layouts/Header';
 
 
@@ -17,7 +17,7 @@ export default function Root() {
         {isLoading ? <LoadingIndicator /> : <Outlet />}
       </main>
       
-      <Footer />
+      {/* <Footer /> */}
       <ScrollRestoration />
     </div>
   );
